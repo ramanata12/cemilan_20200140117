@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Struk</h1>
+        <hr>
+        <table border="1">
+            <body>
+                <tr>
+                    <td>Nama Sayur</td>
+                    <td th:text="${nama}"></td>
+                </tr>
+                
+                <tr>
+                    <td>Harga Sayur</td>
+                    <td th:text="${harga}"></td>
+                </tr>
+                
+                <tr>
+                    <td>Jumlah Beli</td>
+                    <td th:text="${jumlah}"></td>
+                </tr>
+                
+                <tr>
+                    <td>Total Harga</td>
+                     <td th:text="${total}"></td>
+                </tr>
+                
+                <tr>
+                    <td>Total Harga Diskon</td>
+                    <td th:text="${totdiskon}"></td>
+                </tr>
+                
+                <tr>
+                    <td>Uang yang di Berikan</td>
+                    <td th:text="${bayar}"></td>
+                </tr>
+                
+                <tr>
+                    <td>Kembalian</td>
+                    <td th:text="${kembalian}"></td>
+                </tr>
+                 
+        </table>
+    </body>
+</html>
