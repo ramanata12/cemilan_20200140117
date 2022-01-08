@@ -29,11 +29,13 @@ public class projectController {
         int Jumlah = Integer.parseInt(data.getParameter("jumlahsayur"));
         int Bayar = Integer.parseInt(data.getParameter("bayar"));
         int total = hitung.getTotal(Harga, Jumlah);
+        int diskon = hitung.getDiskon(Harga, Jumlah);
         
         sayur.addAttribute("nama", Nama);
         sayur.addAttribute("harga", ("Rp "+ Harga));
         sayur.addAttribute("jumlah", Jumlah);
         sayur.addAttribute("total", ("Rp "+(Harga*Jumlah)));
+        sayur.addAttribute("diskon", diskon + " %");
         sayur.addAttribute("bayar", "Rp "+Bayar);
         sayur.addAttribute("kembalian", "Rp "+(Bayar-total));
         sayur.addAttribute("totdiskon", "Rp "+total);

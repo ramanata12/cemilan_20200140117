@@ -25,5 +25,20 @@ public class hitung {
         }
         return total;
     }
+    public int getDiskon(int hargasayur,int jumlah){
+        int hasil = hargasayur * jumlah;
+        int diskon;
+        
+        if(hasil < 16000){
+            diskon = 0;
+        }
+        else if ((hasil > 16000) && (hasil < 25000)){
+            diskon = 10;
+        }
+        else{
+            diskon = 15;
+        }
+        return diskon;
+    }
 }
 
